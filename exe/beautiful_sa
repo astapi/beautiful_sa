@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
 require "beautiful_sa"
+
+BeautifulSa::CLI.start
