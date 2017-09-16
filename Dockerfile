@@ -12,6 +12,7 @@ RUN apk del build-dependencies
 FROM ruby:2.4.1-alpine
 
 ENV LANG ja_JP.UTF-8
+RUN apk --update add git
 COPY --from=builder /usr/local/bundle /usr/local/bundle
 
 ADD . /app
